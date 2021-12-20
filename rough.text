@@ -3,3 +3,8 @@ import os
 # Walk through pizza_steak directory and list number of files
 for dirpath, dirnames, filenames in os.walk("pizza_steak"):
   print(f"There are {len(dirnames)} directories and {len(filenames)} images in '{dirpath}'.")
+  
+  # Another way to find out how many images are in a file
+num_steak_images_train = len(os.listdir("pizza_steak/train/steak"))
+
+num_steak_images_train
